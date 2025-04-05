@@ -1,0 +1,88 @@
+csc343h-leeale66=> \i schema.ddl
+psql:schema.ddl:42: NOTICE:  drop cascades to 9 other objects
+DETAIL:  drop cascades to table a3glg.members
+drop cascades to table a3glg.execs
+drop cascades to table a3glg.games
+drop cascades to table a3glg.gamecopies
+drop cascades to table a3glg.eventtypes
+drop cascades to table a3glg.eventtypecommittee
+drop cascades to table a3glg.events
+drop cascades to table a3glg.gamesessions
+drop cascades to table a3glg.sessionparticipation
+DROP SCHEMA
+CREATE SCHEMA
+SET
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+csc343h-leeale66=> \i data.sql
+INSERT 0 16
+INSERT 0 4
+INSERT 0 6
+INSERT 0 8
+INSERT 0 3
+INSERT 0 1
+INSERT 0 1
+INSERT 0 2
+INSERT 0 2
+INSERT 0 2
+INSERT 0 1
+INSERT 0 7
+INSERT 0 3
+INSERT 0 5
+INSERT 0 4
+INSERT 0 6
+INSERT 0 4
+INSERT 0 7
+INSERT 0 7
+csc343h-leeale66=> \i q1.sql
+ event_id | event_date |    location    | participation_percentage 
+----------+------------+----------------+--------------------------
+        1 | 2025-03-05 | Weekly Venue   |                    50.00
+        2 | 2025-03-12 | Weekly Venue   |                    87.50
+        3 | 2025-03-05 | Basement Venue |                    43.75
+        4 | 2025-03-12 | Basement Venue |                    43.75
+(4 rows)
+
+csc343h-leeale66=> \i q2.sql
+ game_id |          title          | total_play_count 
+---------+-------------------------+------------------
+       5 | Avalon                  |                1
+       4 | Cryptid                 |                0
+       6 | 7 Wonders               |                2
+       2 | Turing Machine          |                1
+       1 | Blood on the Clocktower |                2
+       3 | Cascadia                |                1
+(6 rows)
+
+csc343h-leeale66=> \i q3.sql
+       board_game        | exec_name | sessions_facilitated 
+-------------------------+-----------+----------------------
+ Blood on the Clocktower | Zach      |                    2
+(1 row)
+
+csc343h-leeale66=> \i q4.sql
+ full_name | total_sessions 
+-----------+----------------
+ Jason     |              4
+ Tawfiq    |              4
+ Jimbo     |              4
+ Evelyn    |              4
+(4 rows)
+
+csc343h-leeale66=> \i q5.sql
+ event_id | event_date |    location    | avg_participants 
+----------+------------+----------------+------------------
+        1 | 2025-03-05 | Weekly Venue   |             4.00
+        2 | 2025-03-12 | Weekly Venue   |             4.67
+        3 | 2025-03-05 | Basement Venue |             7.00
+        4 | 2025-03-12 | Basement Venue |             7.00
+(4 rows)
+
+csc343h-leeale66=> 
